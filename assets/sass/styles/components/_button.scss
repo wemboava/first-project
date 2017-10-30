@@ -1,0 +1,13 @@
+.button {
+    text-align: center;
+    
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 8px;
+    font-weight: 700;
+    text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
+    background-image: url(https://html5up.net/uploads/demos/miniport/assets/css/images/bg.png);
+    background-color: $background-color-button;
+}

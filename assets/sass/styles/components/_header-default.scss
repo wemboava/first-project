@@ -1,0 +1,15 @@
+    .header-default {
+        text-align: center;
+    
+        &__title {
+            font-size: 2.5em;
+            margin-bottom: 0.75em;
+            color: $background-color-menu-hover;
+        }
+    
+        &__paragraph {
+            font-size: 1.25em;
+            color: $font-color-paragraph;
+        }
+
+}

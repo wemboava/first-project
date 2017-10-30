@@ -1,6 +1,30 @@
-$color: red;
-$color2: blue;
 
-.test-class {
-    background-color: $color;
-}
+// Config
+//======================
+@import "styles/base.scss";
+
+// Base
+//======================
+@import "styles/reset.scss";
+@import "styles/vars.scss";
+@import "../../node_modules/font-awesome/css/font-awesome.css";
+@import "styles/mixins.scss";
+
+// Components
+//======================
+@import "styles/components/header-default.scss";
+@import "styles/components/button.scss";
+@import "styles/components/menu.scss";
+@import "styles/components/thumbnail.scss";
+@import "styles/components/networks.scss";
+@import "styles/components/form.scss";
+@import "styles/components/input-form.scss";
+@import "styles/components/copyright.scss";
+@import "styles/components/separator.scss";
+
+// modules
+//=======================
+@import "styles/modules/top.scss";
+@import "styles/modules/work.scss";
+@import "styles/modules/portifolio.scss";
+@import "styles/modules/contact.scss";

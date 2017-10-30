@@ -1,0 +1,21 @@
+    .info {
+        max-width: 70%;
+        
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: space-between;
+
+        &__name {
+            width: 49%;
+        }
+        &__email {
+            width: 49%;
+        }
+        &__subject {
+            width: 100%;
+        }
+        &__message {
+            width: 100%;
+        }
+    }

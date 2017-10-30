@@ -1,0 +1,95 @@
+.top {
+    padding: 110px 0px;
+    width: 100%;
+
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+
+    // vw -- viewport width
+    // vh -- viewport height
+
+    @include mdscreen ($md){
+        padding: 110px 10px;
+        
+        &__div {
+            width: 60% !important; 
+        }
+        
+        &__title {
+            font-size: 50px;
+            color: $background-color-menu-hover;
+        }
+        &__paragraph {
+            font-size: 20px;        
+        }    
+        &__image {
+            width: 250px;
+        }
+    }
+
+    @include mdscreen ($sm){
+               flex-direction: column;
+        
+        &__div {
+            width: 100% !important;
+            margin-left: 0 !important;
+            padding: 20px;
+            text-align: center;
+            
+            &__image {
+                width: 300px;
+            }
+            &__button {
+                width: 100% !important;
+            }
+        }
+    }
+
+    &__div {
+        width: 50%;
+        
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        align-items: stretch;        
+     
+        &__title {
+            font-size: 50px;
+            color: $background-color-menu-hover;
+        }
+    
+        &__paragraph {
+            margin: 40px 0;
+    
+            color: $font-color-paragraph;
+            font-size: 25px;        
+            font-weight: 300;
+            line-height: 1.75em;    
+            
+            .links {
+                color: $font-color-paragraph;
+                text-decoration: underline;
+        
+                &:hover {
+                    color: $background-color-button;
+                }
+            }
+        }
+    
+        &__button {
+            width: 350px;
+            padding: 30px;
+            margin: 0;
+        }
+    }
+    
+    &__image {
+            border-radius: 50%;
+
+            align-self: center;
+        }
+    }

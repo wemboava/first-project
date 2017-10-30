@@ -1,0 +1,113 @@
+.thumbnail {
+    width: 100%;
+    
+    padding: 4em;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    &__section {
+        margin-left: 15px;
+        margin-right: 15px; 
+        padding: 3em 2em 3.5em 2em;
+
+        background-color: white;
+        box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    }
+    &__icon {
+        font-size: 9em;
+        
+        margin-bottom: 0.5em;
+
+        color: $color-icons; 
+    }
+    &__title {
+        margin-bottom: 0.75em;
+
+        font-size: 1.75em;
+        color: $background-color-menu-hover;
+    }
+    &__paragraph {
+        padding-bottom: 20px;
+
+        font-size: 1.25em;
+        color: $font-color-paragraph;
+    }
+
+    &--work {
+        .thumbnail {
+    
+            @media #{$mq-large-screen}
+            {
+                padding: 4em 0 !important;
+                padding: 1.5em 1.5em 1.5em 1.5em !important;
+            }
+        
+            @media #{$mq-medium-screen}
+            {
+                flex-direction: column;
+                &__section {
+        
+                    margin-left: 10px !important;
+                    margin-right: 10px !important; 
+                    margin: 15px !important;
+                    padding: 1em 1em 1em 1em !important;
+                }
+            }
+            
+            @media #{$mq-small-screen}
+            {
+                flex-direction: column;
+            
+                &__section {
+                    margin: 15px !important;
+                }
+            } 
+        }
+    }
+
+    &--portifolio {
+        .thumbnail{
+            display: flex;
+            flex-wrap: wrap;
+          //justify-content: flex-start;
+            padding: 1em;
+     
+            &__section {
+                width: 30%;
+    
+                padding: 0;
+                margin-top: 30px; 
+                box-sizing: border-box;
+    
+                @media #{$mq-medium-screen}
+                {
+                    width: 45%;
+                }
+                
+                @media #{$mq-small-screen}
+                {
+                    width: 100%;
+                } 
+            }
+            &__title {
+                margin-top: 1em;
+                padding: 0 1em;
+    
+                &:hover {
+                    color: $background-color-button;
+                } 
+            }
+            &__paragraph {
+                padding-bottom: 2em;
+                padding: 0 1em 1em 2em;
+    
+                font-size: 1.25em;
+                color: $font-color-paragraph;
+            }
+            &__image {
+                width: 100%;
+            }
+        }
+    }
+}

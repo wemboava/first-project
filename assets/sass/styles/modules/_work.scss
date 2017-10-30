@@ -1,0 +1,32 @@
+    .work {
+        padding: 5em 0;
+
+        background: url("https://html5up.net/uploads/demos/miniport/assets/css/images/bg.png") repeat;
+        background-color: rgba(70, 70, 70, 0.014);        
+        box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .work__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__paragraph {
+            font-size: 1.25em;
+            margin-bottom: 2.5em;
+
+            align-items: center;            
+            color: $font-color-paragraph;
+        }
+        &__button {
+            width: 400px;
+            padding: 30px;
+        
+        @media #{$mq-medium-screen}{
+            width: 90vw;
+        }
+            
+    
+    }   
+
+    }
